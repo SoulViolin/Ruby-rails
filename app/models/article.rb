@@ -6,6 +6,6 @@ class Article < ApplicationRecord
   validates :body, presence: true, length: { minimum: 10 }
 
   def archived?
-    status == 'archived'
+    status == "archived"
   end
 end
